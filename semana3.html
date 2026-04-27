@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 3 | GSI UPLA</title>
+    <link rel="icon" type="image/x-icon" href="https://www.google.com/s2/favicons?domain=upla.edu.pe&sz=64">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #9d4edd;
+            --primary-soft: #e0aaff;
+            --bg-light: #f3f4f6;
+            --white: #ffffff;
+            --text-dark: #1e1b4b;
+            --text-dim: #64748b;
+            --accent: #5a189a;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            padding: 40px 20px;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .container-btn { max-width: 900px; margin: 0 auto 20px auto; }
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--white);
+            border: 2px solid var(--primary-soft);
+            color: var(--primary);
+            padding: 10px 22px;
+            border-radius: 12px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .back-button:hover {
+            background: var(--primary);
+            color: var(--white);
+            transform: translateX(-5px);
+        }
+
+        .content {
+            background: var(--white);
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+            border-top: 8px solid var(--primary);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 { font-weight: 800; font-size: 2.4rem; margin-bottom: 5px; }
+        .subtitle { color: var(--primary); font-weight: 600; margin-bottom: 30px; display: block; text-transform: uppercase; letter-spacing: 1px; }
+
+        .syllabus-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 15px;
+            background: #fdfcff;
+            border-left: 4px solid var(--primary-soft);
+        }
+
+        h2 { color: var(--accent); font-size: 1.5rem; border-bottom: 2px solid var(--bg-light); padding-bottom: 10px; margin-bottom: 20px; }
+
+        /* IMAGEN ULTRA ESTABLE */
+        .img-container {
+            background: #eee;
+            border-radius: 20px;
+            overflow: hidden;
+            margin: 20px 0;
+            border: 2px solid var(--primary-soft);
+        }
+        .main-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* GRID DE FUNCIONES */
+        .functions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .function-card {
+            background: var(--white);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid #eee;
+            transition: 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+        .function-card:hover { border-color: var(--primary); background: #fdfbff; }
+        .function-card strong { color: var(--primary); display: block; margin-bottom: 8px; font-size: 1.1rem; }
+
+        /* TECNOLOGÍA STACK */
+        .tech-box {
+            background: var(--text-dark);
+            color: var(--white);
+            padding: 30px;
+            border-radius: 20px;
+            margin: 30px 0;
+        }
+        .tech-tag {
+            display: inline-block;
+            background: rgba(255,255,255,0.1);
+            padding: 5px 12px;
+            border-radius: 6px;
+            margin: 5px;
+            font-size: 0.85rem;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .reference {
+            font-size: 0.9rem;
+            color: var(--text-dim);
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-btn">
+        <a href="unidad1.html" class="back-button">
+            <svg viewBox="0 0 24 24" width="18" height="18"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" fill="currentColor"></path></svg>
+            Volver al Portafolio
+        </a>
+    </div>
+
+    <div class="content">
+        <h1>Administración Cloud</h1>
+        <span class="subtitle">Semana 03: Gestión y Operaciones en la Nube</span>
+
+        <p>La administración en la nube no es solo mantener servidores activos; es el arte de orquestar recursos globales para garantizar que los servicios de TI sean resilientes, seguros y rentables.</p>
+
+        <div class="img-container">
+            <img src="https://images.weserv.nl/?url=https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80" 
+                 class="main-image" 
+                 alt="Administración de servidores"
+                 onerror="this.src='https://placehold.co/800x400/9d4edd/ffffff?text=Cloud+Administration+Architecture'">
+        </div>
+
+        <section class="syllabus-section">
+            <h2>1. Funciones de la Administración</h2>
+            <p>Un administrador de sistemas en la nube debe dominar cuatro pilares fundamentales:</p>
+            <div class="functions-grid">
+                <div class="function-card">
+                    <strong>🛡️ Seguridad</strong>
+                    <p style="font-size: 0.85rem; margin:0;">Gestión de identidades (IAM) y cifrado de datos en reposo y tránsito.</p>
+                </div>
+                <div class="function-card">
+                    <strong>📈 Monitoreo</strong>
+                    <p style="font-size: 0.85rem; margin:0;">Observabilidad del rendimiento y salud de las instancias en tiempo real.</p>
+                </div>
+                <div class="function-card">
+                    <strong>💰 FinOps</strong>
+                    <p style="font-size: 0.85rem; margin:0;">Optimización de costos para evitar el desperdicio de recursos pagados.</p>
+                </div>
+                <div class="function-card">
+                    <strong>🤖 Automatización</strong>
+                    <p style="font-size: 0.85rem; margin:0;">Uso de scripts e Infraestructura como Código (IaC) para despliegues rápidos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="syllabus-section">
+            <h2>2. Tecnología Aplicada</h2>
+            <p>Para ejecutar estas funciones, nos apoyamos en herramientas líderes de la industria:</p>
+            <div class="tech-box">
+                <h4 style="margin-top:0; color: var(--primary-soft);">Stack Tecnológico Recomendado:</h4>
+                <div class="tech-tag">AWS CloudWatch</div>
+                <div class="tech-tag">Terraform</div>
+                <div class="tech-tag">Kubernetes</div>
+                <div class="tech-tag">Docker</div>
+                <div class="tech-tag">Ansible</div>
+                <div class="tech-tag">Azure Cost Management</div>
+                <p style="margin: 15px 0 0 0; font-size: 0.85rem; opacity: 0.8;">Estas tecnologías permiten una gestión elástica, donde la infraestructura crece o decrece según la demanda del usuario.</p>
+            </div>
+        </section>
+
+        <div style="background: var(--bg-light); padding: 25px; border-radius: 20px; margin-top: 30px; border-left: 5px solid var(--primary); position: relative; overflow: hidden;">
+    <div style="position: absolute; right: -10px; top: -10px; opacity: 0.05; font-size: 5rem;">⚙️</div>
+    <p style="margin: 0; font-size: 0.95rem; font-weight: 700; color: var(--text-dark);">📌 Resumen de la Sesión:</p>
+    <p style="margin: 10px 0 0 0; font-size: 0.9rem; color: var(--text-dim); text-align: justify;">
+        En esta sesión concluimos que la <strong>Administración Cloud</strong> no se limita al soporte técnico, sino a la gestión estratégica de la disponibilidad. Un administrador moderno debe dominar la <strong>observabilidad</strong> y la <strong>optimización de costos</strong> (FinOps), asegurando que la infraestructura crezca al mismo ritmo que las necesidades del usuario sin comprometer el presupuesto organizacional.
+    </p>
+</div>
+    </div>
+
+</body>
+</html>

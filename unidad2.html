@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad II | GSI UPLA</title>
+    <link rel="icon" type="image/x-icon" href="https://www.google.com/s2/favicons?domain=upla.edu.pe&sz=64">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #9d4edd;
+            --primary-soft: #e0aaff;
+            --bg-light: #f3f4f6;
+            --white: #ffffff;
+            --text-dark: #1e1b4b;
+            --text-dim: #64748b;
+            --glass-border: rgba(157, 78, 221, 0.2);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* NAVEGACIÓN CORREGIDA */
+        nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid var(--glass-border);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover { color: var(--primary); }
+
+        /* CABECERA */
+        .unidad-header {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.85), rgba(157, 78, 221, 0.4)),
+                url('https://portal.upla.edu.pe/wp-content/uploads/2023/11/upla-ingenieria-portada.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--primary-soft);
+            margin-bottom: 40px;
+        }
+
+        h1 { font-size: 2.8rem; font-weight: 800; margin: 0; }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px 40px 20px;
+        }
+
+        .capacidad-box {
+            background: var(--white);
+            border-left: 5px solid var(--primary);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 50px;
+            font-style: italic;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--white);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 25px;
+            transition: all 0.4s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 20px 40px rgba(157, 78, 221, 0.15);
+        }
+
+        .week-tag {
+            background: var(--primary);
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 6px 14px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        img { width: 100%; height: 180px; object-fit: cover; border-radius: 16px; margin-bottom: 15px; }
+        h3 { margin: 10px 0; font-size: 1.4rem; }
+        p { color: var(--text-dim); font-size: 0.95rem; }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="https://www.google.com/s2/favicons?domain=upla.edu.pe&sz=128" alt="Logo UPLA" style="height: 45px; width: auto;">
+                <div style="display: flex; flex-direction: column; margin-left: 12px; line-height: 1.2;">
+                    <span style="font-size: 1rem; font-weight: 800; color: var(--primary);">UPLA</span>
+                    <span style="font-size: 0.7rem; font-weight: 600; color: var(--text-dark); opacity: 0.7; letter-spacing: 0.5px;">INGENIERÍA</span>
+                </div>
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="unidad1.html">Unidad I</a>
+                <a href="unidad2.html">Unidad II</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="unidad-header">
+        <h1>Unidad II: Aplicaciones Empresariales</h1>
+    </section>
+
+    <div class="container">
+        <div class="capacidad-box">
+            <strong>Capacidad:</strong> Genera la obtención de la excelencia operacional e intimidad con el cliente.
+        </div>
+
+        <div class="bento-grid">
+            <a href="semana5.html" class="card">
+                <span class="week-tag">Semana 05</span>
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=400&q=80">
+                <h3>Inteligencia de Negocios</h3>
+                <p>Fundamentos de BI, base de datos y administración de la información.</p>
+            </a>
+            </div>
+    </div>
+</body>
+
+</html>
