@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 1 | GSI UPLA</title>
+    <link rel="icon" type="image/x-icon" href="https://www.google.com/s2/favicons?domain=upla.edu.pe&sz=64">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #9d4edd;
+            --primary-soft: #e0aaff;
+            --bg-light: #f3f4f6;
+            --white: #ffffff;
+            --text-dark: #1e1b4b;
+            --text-dim: #64748b;
+            --accent: #5a189a;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            padding: 40px 20px;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .container-btn {
+            max-width: 900px;
+            margin: 0 auto 20px auto;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--white);
+            border: 2px solid var(--primary-soft);
+            color: var(--primary);
+            padding: 10px 22px;
+            border-radius: 12px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .back-button:hover {
+            background: var(--primary);
+            color: var(--white);
+            transform: translateX(-5px);
+        }
+
+        .content {
+            background: var(--white);
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+            border-top: 8px solid var(--primary);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-weight: 800;
+            font-size: 2.4rem;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 30px;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* SECCIONES DEL SÍLABO */
+        .syllabus-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 15px;
+            background: #fdfcff;
+            border-left: 4px solid var(--primary-soft);
+        }
+
+        h2 {
+            color: var(--accent);
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 10px;
+        }
+
+        /* GRID DIDÁCTICO */
+        .type-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .type-card {
+            background: var(--white);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid #eee;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+        }
+
+        .type-card strong {
+            color: var(--primary);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* COMPONENTES */
+        .component-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .component-tag {
+            background: var(--primary-soft);
+            color: var(--accent);
+            padding: 8px 15px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .main-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-btn">
+        <a href="unidad1.html" class="back-button">
+            <svg viewBox="0 0 24 24" width="18" height="18">
+                <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" fill="currentColor">
+                </path>
+            </svg>
+            Volver al Portafolio
+        </a>
+    </div>
+
+    <div class="content">
+        <h1>Gerencia de Sistemas</h1>
+        <span class="subtitle">Semana 01: Fundamentos de la Información</span>
+
+        <section class="syllabus-section">
+            <h2>1. La Información en la Empresa</h2>
+            <p>La información es el activo más estratégico de la organización moderna. Analizamos cómo el flujo de datos
+                permite a la empresa adaptarse al mercado, reducir la incertidumbre y optimizar la toma de decisiones
+                gerenciales.</p>
+
+            <div
+                style="background: var(--bg-light); border-radius: 20px; overflow: hidden; border: 2px solid var(--primary-soft);">
+                <img src="imagenes/semana1.jpg" class="main-image" alt="Gestión de Información"
+                    style="margin: 0; display: block; filter: brightness(0.95);"
+                    onerror="this.src='https://placehold.co/800x400/9d4edd/ffffff?text=Informacion+Empresarial'">
+            </div>
+        </section>
+
+        <section class="syllabus-section">
+            <h2>2. Sistemas de Información (SI)</h2>
+            <p>Un SI es un conjunto de elementos interrelacionados que recolectan, procesan, almacenan y distribuyen
+                información. No es solo software, es una solución organizacional para enfrentar retos del entorno.</p>
+        </section>
+
+        <section class="syllabus-section">
+            <h2>3. Tipos de Sistemas de Información</h2>
+            <p>Las organizaciones utilizan diferentes niveles de sistemas según su jerarquía:</p>
+            <div class="type-grid">
+                <div class="type-card">
+                    <strong>ESS</strong>
+                    <span>Sistemas de Apoyo a Ejecutivos</span>
+                </div>
+                <div class="type-card">
+                    <strong>DSS / MIS</strong>
+                    <span>Sistemas para la toma de decisiones</span>
+                </div>
+                <div class="type-card">
+                    <strong>TPS</strong>
+                    <span>Sistemas de Procesamiento de Transacciones</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="syllabus-section">
+            <h2>4. Componentes de los SI</h2>
+            <p>Para que un sistema sea funcional, requiere la integración de cinco componentes esenciales:</p>
+            <div class="component-list">
+                <span class="component-tag">💻 Hardware</span>
+                <span class="component-tag">⚙️ Software</span>
+                <span class="component-tag">🗄️ Datos / BD</span>
+                <span class="component-tag">🌐 Redes</span>
+                <span class="component-tag">👤 Personas</span>
+            </div>
+        </section>
+
+        <div style="background: var(--bg-light); padding: 20px; border-radius: 15px; margin-top: 20px;">
+            <p style="margin: 0; font-size: 0.9rem; color: var(--text-dim);"><strong>Resumen Académico:</strong> La
+                comprensión de estos pilares permite al Ingeniero de Sistemas de la UPLA diseñar arquitecturas que
+                soporten el crecimiento institucional y empresarial.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
